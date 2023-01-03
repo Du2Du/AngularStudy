@@ -1,0 +1,9 @@
+<div id="booksHome">
+  <div *ngFor="let book of books" class="bookItem" id="book-{{ book.id }}">
+    <img src="{{ book.img }}" width="200" height="200" alt="Book Img" />
+    <div class="title">{{ book.name }}</div>
+    <div class="information">
+      {{ book.info }}
+    </div>
+  </div>
+</div>
